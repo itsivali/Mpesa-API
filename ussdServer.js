@@ -20,7 +20,7 @@ app.post('/lipanampesa', (req, res) => {
         return res.status(400).json({ error: 'Invalid request parameters' });
     }
 
-    // Process the payment (replace this with your actual payment processing logic)
+    // Process the payment (replace this with actual payment processing logic)
     const transactionId = generateTransactionId();
 
     // Simulate a successful response
