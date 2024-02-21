@@ -2,6 +2,7 @@ function lipaNaMpesa() {
     const apiKey = 'your_api_key';
     const merchantId = 'your_merchant_id';
     const lipaNaMpesaUrl = 'http://localhost:8080/lipanampesa'; // Replace with your actual server URL
+    const phone='0702524433';
 
     // Get the amount from the user input
     const amountInput = document.getElementById('amountInput');
@@ -15,7 +16,7 @@ function lipaNaMpesa() {
 
     const payload = {
         amount: amount,
-        phoneNumber: '07XXXXXXXX', // Replace with the actual phone number or adjust the input method
+        phoneNumber: phone, // Replace with the actual phone number or adjust the input method
         callbackUrl: 'https://your-callback-url.com'
     };
 

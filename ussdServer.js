@@ -22,14 +22,17 @@ app.post('/lipanampesa', (req, res) => {
 
     // Process the payment (replace this with actual payment processing logic)
     const transactionId = generateTransactionId();
+    const phone = phoneNumber;
 
     // Simulate a successful response
     const response = {
         merchantId: 'your_merchant_id',
         transactionId: transactionId,
+        phoneNumber:phone,
         status: 'success',
         message: 'Payment successful',
     };
+    
 
     res.json(response);
 });
@@ -57,7 +60,7 @@ app.post('/ussd', (req, res) => {
         if (isNaN(amount) || amount <= 0) {
             responseText = 'Invalid amount. Please enter a valid amount:';
         } else {
-            // In a real application, you would integrate with Lipa Na M-Pesa API here
+            funcion (lipaNaMpesa);// This connects  to the Lipa Na M-Pesa API
             responseText = `Payment of ${amount} KES successful. Thank you!`;
         }
     } else {
