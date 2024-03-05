@@ -1,6 +1,6 @@
 function lipaNaMpesa() {
     const apiKey = 'your_api_key';
-    const merchantId = 'your_merchant_id';
+    const merchantId = '1E3FFGB78';
     const lipaNaMpesaUrl = 'http://localhost:8080/lipanampesa'; // Replace with your actual server URL
     const phone='0702524433';
 

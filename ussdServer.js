@@ -23,10 +23,12 @@ app.post('/lipanampesa', (req, res) => {
     // Process the payment (replace this with actual payment processing logic)
     const transactionId = generateTransactionId();
     const phone = phoneNumber;
+    const merchantId = '1E3FFGB78';
+
 
     // Simulate a successful response
     const response = {
-        merchantId: 'your_merchant_id',
+        merchantId: '1E3FFGB78',
         transactionId: transactionId,
         phoneNumber:phone,
         status: 'success',
